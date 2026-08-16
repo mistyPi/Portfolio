@@ -1,179 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cassidy Perry | Web Developer</title>
+  <meta name="description" content="Cassidy Perry is a web developer based in Edmonton, Alberta, building responsive, well-crafted sites and apps for real clients." />
 
-    <link rel="stylesheet" type="text/css" href="assets/main.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d6373aaf16.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  
 
-    <title>Cassidy Perry</title>
-  </head>
-  <body>
-    <div class="buffer-header"></div>
-    <div class="header">
-      <div class="inner-header">
-        <div class="logo-container">
-          <a href="https://cassidy-perry-portfolio.netlify.app/"><h1>Cassidy Perry <i class="fa-solid fa-mug-hot"></i></h1></a>
-        </div>
-  <nav>
-        <ul class="navigation">
-         
-       
- <a href="index.html"> <li> Home</li> </a>
-        
-          <a href="about.html"> <li>About</li> </a>
-            <a href="skills.html"> <li>Skills</li> </a>
-          <a href="work.html"> <li>Portfolio</li> </a>
-        
-          <a href="contact.html"> <li>Contact</li> </a>
-        </ul>
-        </nav>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-
-<div id="hamburger-icon">
-  <div class="bar"></div>
-  <div class="bar"></div>
-  <div class="bar"></div>
-</div>
-
-<ul class="mobile-menu">
-  <li><a href="about.html">About</a></li>
-     <li><a href="skills.html">Skills</a></li>
-  <li><a href="work.html">Portfolio</a></li>
-   <li><a href="contact.html">Contact</a></li>
-</ul>
-
-</div>
-
-
-
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="nav__logo">Cassidy Perry - Portfolio</a>
+      <div class="nav__links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <!-- TODO: replace # with a real link to your resume PDF once you have one hosted -->
+        <a href="#" class="nav__resume">Resume</a>
+        <a href="#contact" class="button button--primary  header-button">Get in touch</a>
       </div>
     </div>
-    <div>
-    
-      </a>
-    </div>
-    <div class="banner">
-      <h3>👋Hello, I am</h3>
-      <h2 id="my-name"> </h2>
-      <h4><span>Web Developer</span> based in Edmonton | Alberta, Canada</h4>
+  </nav>
 
-     <a href="about.html"> <button>Get Started</button></a>
-    </div>
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="wrap hero__inner">
+      <!-- bounce animation -->
+      <p class="hero__greeting">// currently open to junior & entry-level roles </p>
+      <h1>Web developer who builds things <em>real people</em> actually use.</h1>
+      <p class="hero__sub">
+       I’m Cassidy 👋 — an Edmonton-based developer specializing in both <b>front-end</b> and <b>back-end</b> technologies. Proud buisness owner of <b>Casper Web Solutions</b>. I primarily work with small businesses to create cohesive,
+        engaging websites that strengthen their brand, deliver a professional customer experience, improve SEO, and drive conversions.
 
-    <main class="container text-center">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="group-1 row hidden-left">
-            <div class="col-lg-6">
-              <img src="images/jmw-conscruction-webpage.png" class="img-fluid" />
-            </div>
-            <div class="col-lg-6">
-              <h5>Freelance Static Website</h5>
-              <p>
-               This multi-page static website, created as a freelance project, showcases my work in logo design, website design, branding, and front-end development. I coded the entire site, ensuring a responsive layout that seamlessly adapts across devices. The site features a polished user interface, intuitive navigation, and a fully functional contact form, providing a professional and user-friendly experience.
-              </p>
-              <a
-                href="https://jmw-construction-inc.com/"
-                tsrget="blank"
-                ><button class="learn-more-button">View Project</button></a
-              >
-            </div>
+      </p>
+      <div class="hero__actions">
+        <a href="#work" class="button button--primary button--on-dark">See the work</a>
+        <a href="#contact" class="button button--ghost button--on-dark">Get in touch</a>
+      </div>
+      <div class="hero__meta">
+        <span>Edmonton, Alberta, Canada</span>
+        <span>Diploma, Web Development &amp; Internet Applications — Algonquin College, 2025</span>
+        <span>Diploma, Networking Systems — Georgian College, 2023</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about__grid">
+      <div class="about__photo">
+        <img src="images/selfie2.jpg" alt="Cassidy Perry" />
+      </div>
+      <div>
+        <span class="eyebrow">About</span>
+        <h2>Always on that computer...</h2>
+    <p>
+  Ever since the rise of the internet, I knew I wanted to be inside on the computer. What started as a hobby —
+  building and coding video games, customizing webpages, and generally figuring out how things worked —
+  eventually turned into a pursuit of a career. 
+</p>
+<p>
+  <p>
+  Now, two diplomas later, a handful of active clients, and a habit of caring about the small details more
+  than anyone asked me to, I've turned that curiosity into a well-rounded set of skills across web development,
+  design, branding, and digital marketing. Alongside my client work, I work as a Centre Director at Code Ninjas,
+  where I get to combine my technical background with leadership, communication, and teaching.
+</p>
+</p>
+<p>
+  I like taking an idea from a blank page and turning it into something that looks good, works well, and
+  serves a purpose. Whether it's building a website, developing a brand, or helping a client get
+  their work in front of the right people, I enjoy bringing all the pieces together.
+</p>
+        <dl class="about__facts">
+          <div class="about__fact">
+            <dt>Based in</dt>
+            <dd>Edmonton, Alberta</dd>
+          </div>
+          <div class="about__fact">
+            <dt>Looking for</dt>
+            <dd>Junior / entry-level developer roles</dd>
+          </div>
+          <div class="about__fact">
+            <dt>Focus</dt>
+            <dd>Frontend &amp; backend, full builds</dd>
+          </div>
+          <div class="about__fact">
+            <dt>Also does</dt>
+            <dd>Logo &amp; brand design</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="work__head">
+        <span class="eyebrow">Selected work</span>
+        <h2>Three projects, three different problems.</h2>
+      </div>
+
+      <!-- Ticket 01 -->
+      <article class="ticket">
+        <div class="ticket__media">
+          <img src="images/jmw-conscruction-webpage.png" alt="JMW Construction Inc. website homepage" />
+        </div>
+        <div class="ticket__body">
+          <span class="ticket__perforation"></span>
+          <span class="ticket__number">No. 01</span>
+          <span class="ticket__client">Freelance client — JMW Construction Inc.</span>
+          <h3>Building a construction company's entire online identity from zero</h3>
+
+          <div class="ticket__row">
+            <div class="ticket__row-label">The problem</div>
+            <div class="ticket__row-value">No website, no logo, no consistent brand — just a company with real projects and no way to show them.</div>
+          </div>
+          <div class="ticket__row">
+            <div class="ticket__row-label">What I did</div>
+            <div class="ticket__row-value">Designed the logo and brand identity, then built and coded a responsive multi-page site myself — home, about, projects, and a working contact form — end to end.</div>
+          </div>
+          <div class="ticket__row">
+            <div class="ticket__row-label">Outcome</div>
+            <div class="ticket__row-value">Live, in production, handling real client inquiries today.</div>
+          </div>
+
+          <div class="ticket__tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Branding</span><span>Responsive</span>
+          </div>
+          <div class="ticket__links">
+            <a href="https://jmw-construction-inc.com/" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="https://github.com/cass430/JMW-Contruction-Inc" target="_blank" rel="noopener">Code ↗</a>
           </div>
         </div>
-      </div>
-      <div class="row">
-  <div class="col-lg-12">
-    <div class="group-2 row hidden-right">
-      <div class="col-lg-6">
-        <h5>Live Weather App</h5>
-        <p>
-          Our Weather App utilizes live API data to deliver real-time
-          weather forecasts for various locations worldwide. With a
-          user-friendly interface, users can easily access detailed
-          weather information, making it convenient to stay informed about
-          current and upcoming weather conditions on the go.
-        </p>
-        <a href="https://clinquant-pony-a8b998.netlify.app/" target="_blank">
-          <button class="learn-more-button">View Project</button>
-        </a>
-      </div>
-      <div class="col-lg-6">
-        <img src="images/Weather App.png" class="img-fluid" />
-      </div>
-    </div>
-  </div>
-</div>
+        
+      </article>
 
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="group-3 row hidden-left">
-            <div class="col-lg-6">
-              <img src="images/calendar.png" class="img-fluid" />
-            </div>
-            <div class="col-lg-6">
-              <h5>Calendar App</h5>
-              <p>
-              This calendar project leverages a combination of JDOM, jQuery, JavaScript, Node.js, and other libraries to create a dynamic and interactive calendar. It includes a live clock animation that updates in real time, adding a touch of functionality to the interface. Additionally, the project features a form validator for adding new events, ensuring accurate and smooth user input, making it a useful and engaging tool for managing schedules.
-              </p>
-              <a
-                href="https://dainty-raindrop-b5977e.netlify.app/"
-                target="_blank"
-              >
-                <button class="learn-more-button">View Project</button></a
-              >
-            </div>
+      <!-- Ticket 02 -->
+      <article class="ticket">
+        <div class="ticket__media">
+          <img src="images/calendar.png" alt="Calendar app interface with event creation form" />
+        </div>
+        <div class="ticket__body">
+          <span class="ticket__perforation"></span>
+          <span class="ticket__number">No. 02</span>
+          <span class="ticket__client">Personal project</span>
+          <h3>An interactive calendar with a live clock and real input validation</h3>
+
+          <div class="ticket__row">
+            <div class="ticket__row-label">The problem</div>
+            <div class="ticket__row-value">Wanted to move past static layouts and build something with real-time behavior and user input I actually had to handle correctly.</div>
+          </div>
+          <div class="ticket__row">
+            <div class="ticket__row-label">What I did</div>
+            <div class="ticket__row-value">Built the calendar with JDOM, jQuery, JavaScript, and Node.js — including a live clock that updates in real time and a form validator for adding new events.</div>
+          </div>
+          <div class="ticket__row">
+            <div class="ticket__row-label">Outcome</div>
+            <div class="ticket__row-value">A working scheduling tool with clean input handling instead of a static grid of dates.</div>
+          </div>
+
+          <div class="ticket__tags">
+            <span>JavaScript</span><span>Node.js</span><span>jQuery</span><span>Form validation</span>
+          </div>
+          <div class="ticket__links">
+            <a href="https://dainty-raindrop-b5977e.netlify.app/" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="https://github.com/cass430/Calendar-project" target="_blank" rel="noopener">Code ↗</a>
           </div>
         </div>
-      </div>
-      <div class="banner-foot">Let's work together!</div>
-    </main>
+      </article>
 
-    <footer>
-      <hr />
-      <div>
-        <a href="mailto:recipient@example.com">info@casperwebsolutions.com</a>
+      <!-- Ticket 03 -->
+      <article class="ticket">
+        <div class="ticket__media">
+          <img src="images/weather-app.png" alt="Weather app showing forecast for Paris, France" />
+        </div>
+        <div class="ticket__body">
+          <span class="ticket__perforation"></span>
+          <span class="ticket__number">No. 03</span>
+          <span class="ticket__client">Personal project</span>
+          <h3>A weather app built around a live third-party API</h3>
+
+          <div class="ticket__row">
+            <div class="ticket__row-label">The problem</div>
+            <div class="ticket__row-value">Wanted hands-on practice pulling in live external data and handling it cleanly, instead of working with static or mock data.</div>
+          </div>
+          <div class="ticket__row">
+            <div class="ticket__row-label">What I did</div>
+            <div class="ticket__row-value">Built a city-search tool that fetches live forecast data and renders current conditions plus a multi-day outlook in a simple, readable layout.</div>
+          </div>
+          <div class="ticket__row">
+            <div class="ticket__row-label">Outcome</div>
+            <div class="ticket__row-value">A deployed app that returns a real forecast for any city searched, on the spot.</div>
+          </div>
+
+          <div class="ticket__tags">
+            <span>JavaScript</span><span>REST API</span><span>Async / await</span>
+          </div>
+          <div class="ticket__links">
+            <a href="https://clinquant-pony-a8b998.netlify.app/" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="https://github.com/cass430/my-first-project" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TODO: add more projects -->  
+       <div class="see-more">
+        <a href="#seemore" class="button button--see-more button--ghost">See more</a>
+       </div>
       </div>
-      <div class="icons">
-        <a
-          href="https://www.linkedin.com/in/cassidyperry-webdev/"
-          target="_blank"
-        >
-          <i class="fa-brands fa-linkedin"></i>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="wrap">
+      <div class="skills__head">
+        <span class="eyebrow">&lt;Skills&gt;</span>
+        <h2>What I build with.</h2>
+      </div>
+      <div class="skills__groups">
+        <div class="skills__group">
+          <div class="skills__group-label">Languages &amp; frameworks</div>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Node.js</li>
+            <li>Vue.js</li>
+            <li>Python 3</li>
+            <li>C#</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <div class="skills__group-label">Tools &amp; workflow</div>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Responsive design</li>
+            <li>REST APIs</li>
+            <li>MySQL</li>
+            <li>CMS</li>
+            
+          </ul>
+        </div>
+        <div class="skills__group">
+          <div class="skills__group-label">Design</div>
+          <ul>
+            <li>UI / UX</li>
+            <li>Brand &amp; logo design</li>
+            <li>Adobe Photoshop</li>
+            <li> Adobe Illistrator</li>
+            <li>Figma</li>
+            <li> WordPress</li>
+            <li>Shopify</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skills__creds">
+        <div class="skills__creds-label">Certifications</div>
+        <div class="skills__creds-list">
+          <span>SheCodes Artificial Intelligence — May 2024</span>
+          <span>SheCodes Web Development Plus — May 2024</span>
+          <span>SheCodes Web Development — Feb 2024</span>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact__inner">
+      <span class="eyebrow eyebrow--on-dark">Get in touch</span>
+      <h2>Let's build something together.</h2>
+      <p>Open to junior and entry-level developer roles, and always happy to talk about a project.</p>
+      <div class="contact__actions">
+        <a href="mailto:info@casperwebsolutions.com" class="button button--primary button--on-dark">Email me</a>
+        <!-- TODO: replace # with a real link to your resume PDF once you have one hosted -->
+        <a href="#" class="button button--ghost button--on-dark">Download resume</a>
+      </div>
+      <div class="contact__socials">
+        <a href="https://www.linkedin.com/in/cassidyperry-webdev/" target="_blank" rel="noopener">LinkedIn
+          <i class="fa-brands fa-linkedin-in"></i>
         </a>
-        <a
-          href="https://github.com/mistyPi"
-          target="_blank"
-        >
-          <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/mistyPi" target="_blank" rel="noopener"> Github
+          <i class="fa-brands fa-github-alt"></i>
         </a>
-       
+        <a href="mailto:info@casperwebsolutions.com">info@casperwebsolutions.com
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       </div>
-      <p>&copy; 2024 Cassidy Perry</p>
-      <div>
-        This page was coded by Cassidy Perry and is open sourced on
-        <a href="#">Github</a> and is hosted by <a href="#">Netify</a>
-      </div>
-    </footer>
-    <script src="assets/main.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>&copy; 2026 Cassidy Perry</span>
+      <span>Designed &amp; built by Cassidy Perry</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/d6373aaf16.js" crossorigin="anonymous"></script>
+</body>
 </html>
