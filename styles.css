@@ -328,8 +328,8 @@ h1, h2, h3 {
 
 .about__photo {
   border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid rgba(35, 44, 53, 0.1);
+
+ 
 }
 
 .about__photo img {
@@ -369,6 +369,53 @@ h1, h2, h3 {
 .about__fact dd {
   font-size: 15px;
   font-weight: 600;
+}
+
+
+/* ============================================
+   POLAROID
+   ============================================ */
+
+   /* Container styling for Polaroid frame */
+.polaroid {
+  background-color: #ffffff;
+  /* Larger bottom padding*/
+  padding: 15px 15px 45px 15px; 
+  width: 100%;
+  margin: 0 auto 40px auto;
+  display: inline-block;
+  transform: rotate(-3deg);
+  
+  /* Adds depth and separation from the background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15), 0 10px 25px rgba(0, 0, 0, 0.1);
+  
+  /* Smooth transition for hover animations */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ensures the photo fits perfectly inside the frame */
+.polaroid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1 / 1; /* Classic Polaroids are square */
+  object-fit: cover;
+  transform: rotate(-2deg);
+}
+
+/* Styling for the handwritten-style text underneath */
+.polaroid figcaption {
+  text-align: center;
+  font-family: 'Cedarville Cursive', 'Permanent Marker', cursive, sans-serif;
+  font-size: 1.2rem;
+  color: #333333;
+  margin-top: 15px;
+}
+
+/* Optional interactive lifting and leveling effect on hover */
+.polaroid:hover {
+  transform: scale(1.03) rotate(0deg) translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
 /* ============================================
