@@ -466,15 +466,15 @@ h1, h2, h3 {
 
 .ticket__media {
   position: relative;
-  background: var(--navy);
+  background: var(--white);
   min-height: 320px;
 }
 
 .ticket__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top;
+  object-fit:contain;
+  object-position:middle;
 }
 
 .ticket__perforation {
