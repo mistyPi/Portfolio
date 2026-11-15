@@ -2,13 +2,13 @@
    DESIGN TOKENS
    ============================================ */
 :root {
-  --navy: #374452;
-  --navy-deep: #232C35;
+  --navy: #6444A0;
+  --navy-deep: #280f57;
   --cloud: #F0EEE9;
   --white: #FFFFFF;
-  --lightblue: #B6CCDD;
- --light-burgendy: #A34857;
- --burgendy: #9D0B23;
+  --lightblue: #c1a8f0;
+ --light-burgendy: #c7ff87;
+ --burgendy: #7feb1b;
 
 
   --font-display: "Fraunces", serif;
@@ -137,7 +137,7 @@ h1, h2, h3 {
   font-weight: 500;
   color: var(--navy-deep);
   position: relative;
-  padding-bottom: 4px;
+
 }
 
 .nav__links a:not(.button)::after {
@@ -165,7 +165,7 @@ h1, h2, h3 {
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 15px;
-  padding: 12px 24px;
+  padding: 12px 20px;
   border-radius: 100px;
   border: 1.5px solid var(--navy-deep);
   transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
@@ -196,12 +196,14 @@ h1, h2, h3 {
 .see-more { 
   display: flex;
   justify-content: center;
+
 }
 
 .button--see-more { 
   background: transparent;
-  border-color: var(--cloud);
-  color: var(--cloud);
+
+  border-color: var(--navy-deep);
+  color: var(--navy-deep);
 }
 
 .header-button {
@@ -810,3 +812,11 @@ h1, h2, h3 {
     align-items: stretch;
   }
 }
+
+@media (max-width: 768px) {
+  .contact__socials {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
